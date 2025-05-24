@@ -1,0 +1,253 @@
+html, body {
+
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding:2 rem;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .folder-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+  }
+.title-section{
+margin-top:200px;    
+}
+  .folder {
+    width: 400px;
+    text-align: center;
+    height: 100px;
+    padding: 15px 25px;
+    background: #FaF6F5;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #FF94AB;
+    font-weight: 600;
+    font-size: 1.5rem;
+    justify-content: center;
+    transition: background-color 0.3s;
+    color: #FF94AB;
+  }
+
+  .folder:hover {
+    background-color: #FF94AB;
+    color: white;
+  }
+
+  .gallery-wrapper {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 0;
+    width: 100%;
+  }
+
+  .gallery-wrapper.open {
+    max-height: 1200px;
+    padding: 20px 0;
+    width:1200px;
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+  }
+
+  .image-viewer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+
+  .image-box {
+    width: 350px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .image-box img,
+  .image-box video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #FF94AB;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    opacity: 0;
+    transition: 0.3s;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  .image-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .arrow {
+    cursor: pointer;
+    font-size: 30px;
+    user-select: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .arrow:hover {
+    color: #FF94AB;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    min-height: 24px;
+  }
+
+  .title-section .lang.vi,
+  .title-section .lang.en {
+    font-size: 40px;
+    color: #FF94AB;
+    position: relative;
+    top: -100px;
+  }
+  .header a{
+      text-decoration: none;
+  }
+  /* Tablets and Desktops */
+@media (max-width: 1190px) {
+  .gallery-wrapper.open {
+  max-height: 800px; /* Adjusted max-height for tablets */
+  padding: 20px 0;
+  width: 95%; /* Adjust for better fit on tablets */
+  max-width: 990px; /* Limit max width for this breakpoint */
+}
+
+.gallery {
+  gap: 15px; /* Slightly larger gap for tablets */
+}
+
+.image-viewer {
+  gap: 15px; /* Gap between images for multi-image view */
+  scroll-snap-type:proximity; /* Disable snapping for multi-image view */
+  justify-content:start; /* Center images when multiple are visible */
+}
+
+.image-box {
+  width: 280px; /* Adjust image box width for tablets */
+  min-width: unset; /* Remove min-width override */
+  padding: 0; /* Remove padding for multi-image view */
+}
+
+.image-box img,
+.image-box video {
+  
+  width: 100%; /* Full width within its box */
+  margin: 0; /* Remove margin */
+}
+
+.arrow {
+  font-size: 28px; /* Slightly larger arrows for tablets */
+  padding: 5px 8px;
+}
+}
+@media (max-width: 748px) {
+  .gallery-wrapper.open {
+  max-height: 500px; /* Adjusted max-height for tablets */
+  padding: 20px 0;
+  width: 95%; /* Adjust for better fit on tablets */
+  max-width: 400px; /* Limit max width for this breakpoint */
+}
+
+.gallery {
+  gap: 15px; /* Slightly larger gap for tablets */
+}
+
+.image-viewer {
+  gap: 15px; /* Gap between images for multi-image view */
+  scroll-snap-type:proximity; /* Disable snapping for multi-image view */
+  justify-content:start; /* Center images when multiple are visible */
+}
+
+.image-box {
+  width: 280px; /* Adjust image box width for tablets */
+  min-width: unset; /* Remove min-width override */
+  padding: 0; /* Remove padding for multi-image view */
+}
+
+.image-box img,
+.image-box video {
+ 
+  width: 100%; /* Full width within its box */
+  margin: 0; /* Remove margin */
+  object-fit: cover;
+}
+
+.arrow {
+  font-size: 28px; /* Slightly larger arrows for tablets */
+  padding: 5px 8px;
+}
+.folder
+{
+  width: 300px;
+}
+}
+@media(max-width:400px){
+  .folder{
+      width:200px;
+  }
+  .title-section{
+    text-align:center;
+
+  }
+  .title-section .lang.vi, .title-section .lang.en{
+      font-size:20px
+  }
+  .folder .lang.vi{
+      font-size:15px
+  }
+  .arrow{
+      display: none;
+  }
+  .gallery{
+      width: 260px;
+  }
+  .image-box {
+    width:400px;
+  }
+  .image-viewer{
+   gap:150px
+  }
+  
+}

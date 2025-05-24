@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating Header Toggle</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+
+    <!-- Header start -->
+    <div class="header" id="header">
+      <nav>
+        <a href="#home">
+          <span class="lang vi" style="color:#FF94AB;font-weight:bold">Trang chủ</span>
+          <span class="lang en" style="color:#FF94AB;font-weight:bold">Home</span>
+        </a>
+        <a href="#about">
+          <span class="lang vi" style="color:#FF94AB;font-weight:bold">Giới thiệu</span>
+          <span class="lang en" style="color:#FF94AB;font-weight:bold">About</span>
+        </a>
+        <a href="#showcase">
+          <span class="lang vi" style="color:#FF94AB;font-weight:bold">Dự án</span>
+          <span class="lang en" style="color:#FF94AB;font-weight:bold">Projects</span>
+        </a>
+        <a href="#website">
+          <span class="lang vi" style="color:#FF94AB;font-weight:bold">Trang web</span>
+          <span class="lang en" style="color:#FF94AB;font-weight:bold">website</span>
+        </a>
+        <a href="#contact">
+          <span class="lang vi" style="color:#FF94AB;font-weight:bold">Liên hệ</span>
+          <span class="lang en" style="color:#FF94AB;font-weight:bold">Contact</span>
+        </a>
+      </nav>
+      <div class="actions">
+        <button id="themeToggle" title="Chuyển chế độ">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button id="langToggle" title="Đổi ngôn ngữ">
+          <img src="https://flagcdn.com/w40/vn.png" id="flagIcon"  alt="VN Flag">
+        </button>
+      </div>
+    </div>
+    <!-- header end -->
+
+  <!-- Overview section start -->
+  <section class="badge-section" id="home">
+    <div class="text-section">
+      <div class="hello-text">
+        <span class="lang vi">Xin chào, Tên em là</span>
+        <span class="lang en">Hi, My name is</span>
+        <span class="name">Trâm Anh</span>
+      </div>
+      <div class="role-text">
+        <span class="lang vi">Em là một</span>
+        <span class="lang en">I'm a</span>
+        <span class="role">
+          <span class="lang vi">Học sinh</span>
+          <span class="lang en">Student</span>
+        </span>
+      </div>
+      <div class="description">
+        <span class="lang vi">
+          Em có một niềm đam mê đặc biệt với hội họa, thiết kế và cái đẹp. Với em, nghệ thuật là một thế giới riêng biệt, nơi em được tự do vẽ nên những cảm xúc, được thể hiện bản thân và khám phá những điều mới lạ. Hội họa không chỉ là sở thích mà còn là phương tiện để em khám phá và thể hiện bản thân. Trong khi đó, thiết kế, một lĩnh vực sáng tạo đầy năng động là nơi những ý tưởng của em có thể trở thành hiện thực một cách ấn tượng nhất. Dù đang trong giai đoạn học tập, em vẫn luôn cố gắng cân bằng giữa việc học và theo đuổi đam mê nghệ thuật. Em tin rằng, việc nuôi dưỡng tình yêu với nghệ thuật sẽ là nguồn động lực tinh thần to lớn để em có thể mở ra những chân trời mới trong tương lai.
+        </span>
+        <span class="lang en">
+          I have a special passion for painting, design, and beauty. For me, art is a unique world where I can freely express emotions, showcase my personality, and explore new things. Painting is not just a hobby but also a medium for self-discovery and expression. Meanwhile, design, a dynamic creative field, is where my ideas can come to life in the most impressive ways. Although I'm still in my learning phase, I always strive to balance between studies and pursuing my artistic passion. I believe that nurturing my love for art will be a great spiritual motivation for me to open new horizons in the future.
+        </span>
+      </div>
+      <a href="#about" class="more-button">
+        <span class="lang vi">Xem thêm→</span>
+        <span class="lang en">More about me →</span>
+      </a>
+  </div>
+
+    <div class="badge-container" id="badge-container">
+      <div class="badge" id="badge">
+          <div class="badge-content">
+          <div class="badge-image-container">
+            <img src="https://avatars.githubusercontent.com/u/13643?v=4" alt="Profile" class="badge-image">
+          </div>
+          <div class="badge-text-container">
+            <div class="badge-title">Trâm Anh</div>
+            <div class="badge-subtitle">Học sinh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Overview section end -->
+
+  <!-- About section start -->
+  <section class="about-section" id="about">
+    <div class="containera">
+      <h2 class="section-title">
+        <span class="lang vi">Giới thiệu</span>
+        <span class="lang en">About</span>
+      </h2>
+
+      <div class="about-content">
+        <div class="personal-info">
+          <h1>
+            <span class="lang vi" style="font-weight: bold;">Thông tin cá nhân</span>
+            <span class="lang en" style="font-weight: bold;">Personal Info</span>
+          </h1>
+        
+          <div class="info-grid">
+            <div class="info-item">
+              <label>
+                <span class="lang vi">Họ và tên</span>
+                <span class="lang en">Full Name</span>
+              </label>
+              <span>Đặng Trâm Anh</span>
+            </div>
+            <div class="info-item">
+              <label>Email</label>
+              <span>dangtramanh08112007@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <label>
+                <span class="lang vi">Số điện thoại</span>
+                <span class="lang en">Phone</span>
+              </label>
+              <span>+84 782 971 378</span>
+            </div>
+            <div class="info-item">
+              <label>
+                <span class="lang vi">Địa chỉ</span>
+                <span class="lang en">Location</span>
+              </label>
+              <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button class="download-cv">
+              <a href="./TL-XART-VCB01- Đặng Trâm Anh - NXCK.docx.pdf" download="SOP" class="SOP" style="text-decoration:none">
+                <span class="lang vi">Tải CV</span>
+                <span class="lang en">Download CV</span>
+            </a>
+            </button>
+            <button class="hire-me" onclick="window.open('https://zalo.me/84782971378')">
+              <span class="lang vi">Liên hệ</span>
+              <span class="lang en">Contact Me</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>ART</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>DESIGN</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>POWER POINT</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>PROJECT</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+
+         
+
+          
+        </div>
+
+        <div class="timeline-section">
+          <div class="timeline-column">
+            <h2>
+              <span class="lang vi">Học vấn</span>
+              <span class="lang en">Education</span>
+            </h2>
+            <div class="timeline">
+              <div class="timeline-item" data-popup="edu1">
+                <div class="date">2022-2025</div>
+                <h3>
+                  <span class="lang vi">THPT Mạc Đĩnh Chi</span>
+                  <span class="lang en">Mac Dinh Chi High School</span>
+                </h3>
+                <p>
+                  <span class="lang vi">THPT Mạc Đĩnh Chi là nơi em trưởng thành, học được cách suy nghĩ độc lập và phát triển bản thân toàn diện.</span>
+                  <span class="lang en">Mac Dinh Chi High School is where I matured, learned to think independently, and grew as a person.
+                    </span>
+                </p>
+              </div>
+              <div class="timeline-item" data-popup="edu2">
+                <div class="date">2018-2022</div>
+                <h3>
+                  <span class="lang vi">THTH Sài Gòn</span>
+                  <span class="lang en">Sai Gon SecondarySchool</span>
+                </h3>
+                <p>
+                  <span class="lang vi">Những năm học tại Trung học Thực hành Sài Gòn là khoảng thời gian em bắt đầu khám phá bản thân và hình thành những ước mơ đầu tiên.</span>
+                  <span class="lang en">My years at Saigon Experimental Secondary School were when I began discovering myself and forming my earliest dreams.</span>
+                </p>
+              </div>
+              <div class="timeline-item" data-popup="edu3">
+                <div class="date">2013-2018</div>
+                <h3>
+                  <span class="lang vi">Tiểu học Khai Minh</span>
+                  <span class="lang en">Khai Minh Primary School</span>
+                </h3>
+                <p>
+                  <span class="lang vi">Khi còn học ở tiểu học Khai Minh, em đã có nhiều kỷ niệm đẹp và những bài học đầu đời quý giá.</span>
+                  <span class="lang en">When I was studying at Khai Minh Primary School, I had many beautiful memories and learned valuable lessons in my early years.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-column">
+            <h2>
+              <span class="lang vi">Kinh nghiệm</span>
+              <span class="lang en">Experience</span>
+            </h2>
+            <div class="timeline">
+              <div class="timeline-item" data-popup="exp1">
+                <div class="date">2025</div>
+                <h3>IELTS</h3>
+                <p>
+                  <span class="lang vi">Việc đạt được bằng IELTS không chỉ là một thành tích học thuật mà còn mở ra cho em nhiều cơ hội vươn ra thế giới.</span>
+                  <span class="lang en">Earning the IELTS certificate was not just an academic milestone, but also a gateway to global opportunities.</span>
+                </p>
+              </div>
+              <div class="timeline-item" data-popup="exp2">
+                <div class="date">2023</div>
+                <h3>MindX</h3>
+                <p>
+                  <span class="lang vi">Lớp học hội họa tại MindX giúp em thể hiện cảm xúc qua từng nét vẽ và nuôi dưỡng niềm đam mê nghệ thuật.</span>
+                  <span class="lang en">The art class at MindX allowed me to express emotions through every stroke and nurtured my passion for creativity.</span>
+                </p>
+              </div>
+              <div class="timeline-item" data-popup="exp3">
+                <div class="date">2018-2025</div>
+                <h3>
+                  <span class="lang vi">Thiết kế</span>
+                  <span class="lang en">Design</span>
+                </h3>
+                <p>
+                  <span class="lang vi">Khóa học thiết kế giúp em hiểu rằng sáng tạo không chỉ là cảm hứng, mà còn là kỹ năng có thể rèn luyện mỗi ngày.</span>
+                  <span class="lang en">The design course taught me that creativity isn’t just inspiration — it’s a skill that can be trained every day.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About section end -->
+
+ 
+
+  <!-- Showcase section start -->
+  <section class="showcase-section" id="showcase">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang vi">Tác phẩm</span>
+        <span class="lang en">Showcase</span>
+      </h2>
+
+      <!-- Left Description -->
+      <div class="artwork-description">
+          <h2>
+            <span class="lang vi">Nghệ Thuật Trừu Tượng</span>
+            <span class="lang en">Abstract Art</span>
+          </h2>
+          <p>
+            <span class="lang vi">Bộ sưu tập các tác phẩm nghệ thuật trừu tượng của tôi, thể hiện cảm xúc và sự sáng tạo thông qua màu sắc và hình khối.</span>
+            <span class="lang en">My collection of abstract artworks, expressing emotions and creativity through colors and shapes.</span>
+          </p>
+      </div>
+
+      <!-- Center Artwork -->
+      <div class="main-artwork">
+          <div class="artwork-card">
+              <img src="./image/image_web/Art/before_mindx/1.1.jpg" alt="Abstract Art 1" class="artwork-image">
+          </div>
+      </div>
+
+      <!-- Right Previews -->
+      <div class="artwork-previews">
+        <div class="preview-container">
+          <div class="preview-item">
+              <img src="./image/image_web/Art/before_mindx/1.1.jpg" alt="Preview 1">
+          </div>
+          <div class="preview-item">
+              <img src="/image/image_web/Art/while_mindx/2.13.jpg" alt="Preview 2">
+          </div>
+          <div class="preview-item">
+              <img src="/image/image_web/Art/after_mindx/3.1.jpg" alt="Preview 3">
+          </div>
+          <div class="preview-item">
+              <img src="/image/image_web/Art/after_mindx/3.2.jpg" alt="Preview 4">
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="nav-arrows">
+          <button class="nav-arrow prev" aria-label="Previous artwork">←</button>
+          <button class="nav-arrow next" aria-label="Next artwork">→</button>
+      </div>
+
+      <!-- Detailed View -->
+      <div class="artwork-details hidden">
+          <button class="details-close" aria-label="Close details">×</button>
+          <div class="details-content">
+              <h3>
+                <span class="lang vi">Sắc Màu Cảm Xúc</span>
+                <span class="lang en">Colors of Emotion</span>
+              </h3>
+              <p>
+                <span class="lang vi">Kích thước: 80x100 cm</span>
+                <span class="lang en">Size: 80x100 cm</span>
+              </p>
+              <p>
+                <span class="lang vi">Chất liệu: Acrylic trên canvas</span>
+                <span class="lang en">Medium: Acrylic on canvas</span>
+              </p>
+              <p>
+                <span class="lang vi">Năm sáng tác: 2024</span>
+                <span class="lang en">Year: 2024</span>
+              </p>
+              <p>
+                <span class="lang vi">Ý tưởng: Tác phẩm thể hiện sự giao thoa giữa những cảm xúc mãnh liệt thông qua việc sử dụng các mảng màu tương phản và những đường nét tự do, phóng khoáng.</span>
+                <span class="lang en">Concept: The artwork represents the interplay of intense emotions through the use of contrasting color fields and free, expressive lines.</span>
+              </p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Showcase section end -->
+
+  <!-- web section start -->
+  <section class="project-section" id="website">
+    <h2 class="section-title">Heart4Animals Website Project</h2>
+    <div class="website-container">
+        <div class="website-header">
+            <div class="browser-dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="website-address">https://sites.google.com/view/heart4animals/trang-chủ</div>
+            <a href="https://sites.google.com/view/heart4animals/trang-ch%E1%BB%A7" 
+               target="_blank" 
+               class="visit-button">Visit Site</a>
+        </div>
+<div class="headerweb">
+    <div class="logo">Heart4Animals</div>
+    <h2 style="color:gray">(Đây là nội dung xem trước)</h2>
+ 
+    <div class="navigation">
+        <a href="#">Tin Tức và Sự Kiện</a>
+    </div>
+</div>
+
+<div class="content-section">
+   
+    <div class="image-grid">
+        <img src="/image/web_section/hinh1.jpg" alt="News Image 1">
+        <img src="/image/web_section/hinh2.webp" alt="News Image 2">
+        <img src="/image/web_section/hinh3.webp" alt="News Image 3">
+        </div>
+   
+    </div>
+
+<div class="content-section">
+    <h2>Địa Chỉ Trung Tâm Cứu Trợ</h2>
+    <div class="hang2">
+        <div class="contact-info">
+            <div>
+                <p><strong>Thời gian làm việc:</strong></p>
+                <p>Thứ Hai - Thứ Sáu: 9:00 - 17:00</p>
+                <p>Thứ Bảy: 9:00 - 12:00</p>
+                <p>Chủ Nhật: Đóng cửa</p>
+            </div>
+            <div>
+                <p>[Các ngày lễ chỉ làm việc trực tuyến]</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6581085399654!2d106.6301331147491!3d10.841122292273066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dc2e70ed73f%3A0xd488738d14fd3ad9!2zNCBUw6JuIEjhu5NpIMSQw7RuZywgUGjGsOG7nW5nIDE0LCBRdeG6rW4gNiwgVGjDoG5oIHBo4buRIEjDoCBDaGkgTWluaA!5e0!3m2!1svi!2s!4v1716117707779!5m2!1svi!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+       
+    </div>
+    <p>Các thông tin chi tiết hơn về địa chỉ và hướng dẫn đường đi.</p>
+</div>
+
+<div class="content-section" style="background-color: #004d99; color: #fff;">
+    <h2>Doanh nghiệp hợp tác</h2>
+    <p style="color: #fff;">Kết nối các doanh nghiệp có tâm để cùng nhau phát triển.</p>
+    <p style="color: #fff;">Các đoạn văn bản mô tả về hợp tác doanh nghiệp và lợi ích.</p>
+    </div>
+
+<div class="content-section" style="text-align: center;">
+    <p>"Cùng chung tay bảo vệ và cứu giúp những sinh linh cần sự trợ giúp!"</p>
+</div>
+
+<div class="footera">
+    <p>© 2023 Heart4Animals. All Rights Reserved.</p>
+    <div>
+        <a href="#">Chính sách bảo mật</a> | <a href="#">Điều khoản dịch vụ</a>
+    </div>
+    <p>Liên hệ: [Thông tin liên hệ]</p>
+    <div>
+        </div>
+</div>
+    </div>
+</section>
+  <!-- web section end -->
+
+  <!-- service section start -->
+  <section class="service section" id="effect">
+    <div class="containera">
+        <div class="rowa">
+            <div class="section-title padd-15" style="align-items:center;text-align:center">
+                <h2>Danh mục</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service-item padd-15">
+              <a href="html/art.html" style="color:black;text-decoration:none"><div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa-solid fa-pencil" style="font-size:50px"></i>
+                    </div>
+                    <h4>
+                      <span class="lang vi">Mỹ thuật</span>
+                      <span class="lang en">Art</span>
+                    </h4>
+                    <p>
+                      <span class="lang vi" style="color:gray">Khám phá thế giới sáng tạo từ những nét vẽ đầu tiên!</span>
+                      <span class="lang en" style="color:gray">Discover a creative world from the very first strokes!</span>
+                    </p>
+                </div></a>
+            </div>
+            <div class="service-item padd-15">
+              <a href="html/design.html" style="color:black;text-decoration:none"><div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa-solid fa-laptop" style="font-size:50px"></i>
+                    </div>
+                    <h4>
+                      <span class="lang vi">Thiết kế</span>
+                      <span class="lang en">Design</span>
+                    </h4>
+                    <p>
+                      <span class="lang vi" style="color:gray">Ý tưởng thành hình – xem những thiết kế đầy cảm hứng!</span>
+                      <span class="lang en" style="color:gray">Ideas take shape – explore inspiring designs!</span>
+                    </p>
+                </div></a>
+            </div>
+            <div class="service-item padd-15">
+              <a href="html/ppt.html" style="color:black;text-decoration:none"><div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa-solid fa-file-powerpoint" style="font-size:50px"></i>
+                    </div>
+                    <h4>
+                      <span class="lang vi">Bài trình chiếu</span>
+                      <span class="lang en">Power Point</span>
+                    </h4>
+                    <p>
+                    <span class="lang vi" style="color:gray">Thuyết trình chuyên nghiệp, ấn tượng từng slide!</span>
+                    <span class="lang en" style="color:gray">Professional slides that leave a lasting impression!</span>
+                    </p>
+                </div></a>
+            </div>
+            <div class="service-item padd-15">
+              <a href="html/project.html" style="color:black;text-decoration:none"><div class="service-item-inner">
+                    <div class="icon">
+                      <i class="fa-solid fa-business-time" style="font-size:50px"></i>
+                    </div>
+                    <h4>
+                      <span class="lang vi" >Dự án</span>
+                      <span class="lang en" >Project</span>
+                    </h4>
+                    <p>
+                      <span class="lang vi" style="color:gray">Xem học viên biến ý tưởng thành sản phẩm thực tế!</span>
+                      <span class="lang en" style="color:gray">See how students turn ideas into real-world products!</span>
+                    </p>
+                </div></a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- service section enđ -->
+  <!-- Contact section start -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="lang vi">Liên Hệ</span>
+        <span class="lang en">Contact</span>
+      </h2>
+
+      <form class="contact-form" action="https://formsubmit.co/dangtramanh08112007.com" method="POST" enctype="text/plain">
+        <div class="form-field">
+          <input type="text" name="name" id="name" required>
+          <label for="name" class="label-name">
+            <span class="content-name">
+              <span class="lang vi">Họ và tên</span>
+              <span class="lang en">Full Name</span>
+            </span>
+          </label>
+        </div>
+        <input type="hidden" name="_autoresponse" value="Thank you for your email i will answer it soon">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-field">
+          <input type="email" name="email"  required>
+          <label for="email" class="label-name">
+            <span class="content-name">
+              <span class="lang vi">Email</span>
+              <span class="lang en">Email</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="form-field">
+          <input type="text" name="subject" id="subject" required>
+          <label for="subject" class="label-name">
+            <span class="content-name">
+              <span class="lang vi">Tiêu đề</span>
+              <span class="lang en">Subject</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="form-field">
+          <textarea name="message" id="message" required></textarea>
+          <label for="message" class="label-name">
+            <span class="content-name">
+              <span class="lang vi">Tin nhắn</span>
+              <span class="lang en">Message</span>
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="send-button">
+          <span class="lang vi">Gửi tin nhắn</span>
+          <span class="lang en">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- Contact section end -->
+
+  <!-- Footer with cat illustration start -->
+  <footer class="footer-section">
+    <div class="cat-illustration">
+      <div class="cat">
+        <div class="cat-body"></div>
+        <div class="cat-head">
+          <div class="cat-ears">
+            <div class="cat-ear left"></div>
+            <div class="cat-ear right"></div>
+          </div>
+          <div class="cat-face">
+            <div class="cat-eyes">
+              <div class="cat-eye left"></div>
+              <div class="cat-eye right"></div>
+            </div>
+            <div class="cat-nose"></div>
+            <div class="cat-mouth"></div>
+            <div class="cat-whiskers">
+              <div class="whisker-set left">
+                <div class="whisker"></div>
+                <div class="whisker"></div>
+                <div class="whisker"></div>
+              </div>
+              <div class="whisker-set right">
+                <div class="whisker"></div>
+                <div class="whisker"></div>
+                <div class="whisker"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cat-tail"></div>
+      </div>
+      <div class="paw-prints">
+        <div class="paw-print"></div>
+        <div class="paw-print"></div>
+        <div class="paw-print"></div>
+        <div class="paw-print"></div>
+      </div>
+    </div>
+    <p class="footer-text">Made with ❤️ by Trâm Anh</p>
+  </footer>
+  <!-- Footer with cat illustration end -->
+
+  <!-- Scroll to top button -->
+  <div class="scroll-to-top" id="scrollTopBtn" style="background:#FF94AB"><i class='fas fa-angle-up' style='font-size:48px;background:#FF94AB'></i></div>
+
+  <!-- Popup Container -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-container">
+      <button class="popup-close" id="popupClose">×</button>
+      <div class="popup-content">
+        <div class="popup-text">
+          <h2 class="popup-title">
+            <span class="lang vi"></span>
+            <span class="lang en"></span>
+          </h2>
+          <div class="popup-date"></div>
+          <div class="popup-description">
+            <span class="lang vi"></span>
+            <span class="lang en"></span>
+          </div>
+        </div>
+        <div class="popup-image">
+          <img src="" alt="Timeline Image">
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Nhạc nền -->
+    <audio id="background-audio" autoplay loop>
+      <source src="./audio/massobeat.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+  <!-- Scripts -->
+  <script src="./js/app.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    const badgeContainer = document.getElementById("badge-container");
+    const badge = document.getElementById("badge");
+    let isDragging = false;
+    let currentX;
+    let currentY;
+    let initialX;
+    let initialY;
+    let xOffset = -50;
+    let yOffset = 0;
+    let isInitialAnimationDone = false;
+
+    // Add tilt effect
+    badge.addEventListener('mousemove', (e) => {
+      if (isDragging) return;
+      
+      const rect = badge.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateY = ((x - centerX) / centerX) * 10;
+      const rotateX = -((y - centerY) / centerY) * 10;
+      
+      badge.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    badge.addEventListener('mouseleave', () => {
+      if (!isDragging) {
+        badge.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+      }
+    });
+
+    function dragStart(e) {
+      if (!isInitialAnimationDone) return;
+      
+      if (e.type === "touchstart") {
+        initialX = e.touches[0].clientX - xOffset;
+        initialY = e.touches[0].clientY - yOffset;
+      } else {
+        initialX = e.clientX - xOffset;
+        initialY = e.clientY - yOffset;
+      }
+
+      if (e.target === badge || badge.contains(e.target)) {
+        isDragging = true;
+        badgeContainer.style.transition = 'none';
+        badge.style.cursor = 'grabbing';
+        badge.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+      }
+    }
+
+    function dragEnd(e) {
+      if (!isDragging) return;
+      
+      isDragging = false;
+      badge.style.cursor = 'pointer';
+
+      // Animate back to original position
+      badgeContainer.style.transition = 'all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1.2)';
+      badgeContainer.style.transform = 'translateX(-50px)';
+      
+      xOffset = -50;
+      yOffset = 0;
+
+      setTimeout(() => {
+        badgeContainer.style.transition = 'none';
+      }, 800);
+    }
+
+    function drag(e) {
+      if (!isDragging) return;
+      
+      e.preventDefault();
+      
+      if (e.type === "touchmove") {
+        currentX = e.touches[0].clientX - initialX;
+        currentY = e.touches[0].clientY - initialY;
+      } else {
+        currentX = e.clientX - initialX;
+        currentY = e.clientY - initialY;
+      }
+
+      xOffset = currentX;
+      yOffset = currentY;
+
+      // Apply transforms for dragging
+      badgeContainer.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    }
+
+    // Add initial drop animation
+    window.addEventListener('load', () => {
+      badgeContainer.style.animation = 'dropAndSwing 2s ease-out forwards';
+      setTimeout(() => {
+        badgeContainer.style.animation = '';
+        isInitialAnimationDone = true;
+        badgeContainer.style.transform = 'translateX(-50px)';
+      }, 2000);
+    });
+
+    // Add event listeners
+    badge.addEventListener("mousedown", dragStart);
+    badge.addEventListener("touchstart", dragStart);
+    document.addEventListener("mousemove", drag);
+    document.addEventListener("touchmove", drag, { passive: false });
+    document.addEventListener("mouseup", dragEnd);
+    document.addEventListener("touchend", dragEnd);
+
+    // Handle iframe loading
+    const iframe = document.querySelector('.website-frame iframe');
+    iframe.addEventListener('load', function() {
+      this.setAttribute('data-loaded', 'true');
+    });
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        /* body start */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #FAF6F5;
+    color: black;
+    transition: background 0.4s, color 0.4s;
+  }
+  /* body end */
+  
+  /* header start */
+  .header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px #FF94AB;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    z-index: 999;
+  }
+  
+  .header .logo {
+    height: 40px;
+    transition: all 0.3s;
+  }
+  
+  .header nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 4rem;
+  }
+  
+  .header.shrink {
+    left: 30px;
+    top: 30px;
+    transform: none;
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 10px;
+    justify-content: flex-end;
+    overflow: visible;
+  }
+  
+  .header.shrink .logo {
+    height: 30px;
+  }
+  
+  .header.shrink nav {
+    display: none;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #e74c3c;
+    color: white;
+    font-size: 24px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  
+  .lang {
+    display: none;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .lang.vi {
+    display: inline;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  #langToggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  /* header end */
+    </style>
+</head>
+<body>
+    <!-- Header start -->
+
+    <nav>
+      <a href="#home">
+        <span class="lang vi" style="color:#FF94AB;font-weight:bold">Trang chủ</span>
+        <span class="lang en" style="color:#FF94AB;font-weight:bold">Home</span>
+      </a>
+      <a href="#about">
+        <span class="lang vi" style="color:#FF94AB;font-weight:bold">Giới thiệu</span>
+        <span class="lang en" style="color:#FF94AB;font-weight:bold">About</span>
+      </a>
+      <a href="#showcase">
+        <span class="lang vi" style="color:#FF94AB;font-weight:bold">Dự án</span>
+        <span class="lang en" style="color:#FF94AB;font-weight:bold">Projects</span>
+      </a>
+      <a href="#website">
+        <span class="lang vi" style="color:#FF94AB;font-weight:bold">Trang web</span>
+        <span class="lang en" style="color:#FF94AB;font-weight:bold">website</span>
+      </a>
+      <a href="#contact">
+        <span class="lang vi" style="color:#FF94AB;font-weight:bold">Liên hệ</span>
+        <span class="lang en" style="color:#FF94AB;font-weight:bold">Contact</span>
+      </a>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" title="Chuyển chế độ">
+        <span id="themeIcon">🌙</span>
+      </button>
+      <button id="langToggle" title="Đổi ngôn ngữ">
+        <img src="https://flagcdn.com/w40/vn.png" id="flagIcon" width="30" alt="VN Flag">
+      </button>
+    </div>
+  </div>
+  <!-- header end -->
+</body>
+</html>
